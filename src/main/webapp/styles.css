@@ -70,11 +70,19 @@ button:hover{
     margin-top: -100px;
     margin-bottom: 0px;
     margin-left: 165px;
+    color: #fffdfd;
+    animation: hideText 2s linear 2s forwards;
 }
-.text4:hover{
-    color: transparent;
-    background:transparent;
+@keyframes hideText {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }
+
 .info-contact{
     position: fixed;
     bottom: 0;
